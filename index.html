@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daleep Portfolio</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header class="bg-white">
+    <header class="bg-white z-50 relative" id="home">
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
+                <a href="#home" class="-m-1.5 p-1.5">
                     <span class="sr-only">Daleep Kumar</span>
                     <img class="h-12 w-auto" src="./images/logo.png" alt="">
                 </a>
@@ -31,9 +32,9 @@
             
             <div class="hidden lg:flex lg:gap-x-12">
 
-                <a href="#" class="text-lg font-semibold text-gray-900">Home</a>
-                <a href="#" class="text-lg font-semibold text-gray-900">Projects</a>
-                <a href="#" class="text-lg font-semibold text-gray-900">About Me</a>
+                <a href="#home" class="text-lg font-semibold text-gray-900">Home</a>
+                <a href="#projects" class="text-lg font-semibold text-gray-900">Projects</a>
+                <a href="#contact" class="text-lg font-semibold text-gray-900">Contact Us</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <!-- <a href="#" class="text-lg font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a> -->
@@ -66,7 +67,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 z-10 bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a href="#home" class="-m-1.5 p-1.5">
                 <span class="sr-only">Daleep Kumar</span>
                 <img class="h-8 w-auto" src="./images/logo.png" alt="Logo">
             </a>
@@ -99,14 +100,35 @@
                     </div>
                 </div>
                 <div class="space-y-2 py-6">
-                    <a href="#" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Home</a>
-                    <a href="#" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Projects</a>
-                    <a href="#" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">About Me</a>
+                    <a href="#home" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+                    <a href="#projects" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Projects</a>
+                    <a href="#contact" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Contact Us</a>
                 </div>
             </div>
         </div>
     </div>
     </header>
+    <section id="introduction">
+        <div class="bg-white">
+            <div class="relative isolate px-6 pt-2 lg:px-8">
+                <div class="mx-auto max-w-2xl py-12">
+                    <div class="text-center">
+                        <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Welcome to My Portfolio</h1>
+                        <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Explore my projects, skills, and journey in the tech world.</p>
+                        <div class="mt-10 flex items-center justify-center gap-x-6">
+                            <a href="#projects" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs bg-slate-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">See My Work</a>
+                            <a href="#about" class="text-sm font-semibold text-gray-900">Learn More About Me <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+                    <div class="relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
     <section id="projects">
         <section class="py-12 bg-gray-100">
             <div class="max-w-6xl mx-auto px-6 text-center">
@@ -164,7 +186,7 @@
         
     </section>
 
-    <section id="hero">
+    <section id="about">
         <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
             <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
                 alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center">
@@ -217,16 +239,42 @@
         </div>
     </section>
 
+    <section id="contact" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Left Column: Motivational Message (Wrapped in a Card) -->
+                <div class="flex-1 flex items-center m-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-full text-center md:text-left">
+                        <!-- Icon or Decorative Graphic -->
+                        <div class="mb-6">
+                            <svg class="w-16 h-16 mx-auto md:mx-0 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                            </svg>
+                        </div>
+                        <!-- Heading -->
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">We'd Love to Hear From You!</h2>
+                        <!-- Subheading -->
+                        <p class="text-lg text-gray-600 mb-6">
+                            Whether you have a question, feedback, or just want to say hello, feel free to reach out. Your thoughts are important to us, and we're here to assist you.
+                        </p>
+                    </div>
+                </div>
+                <!-- Right Column: Contact Form -->
+                <div class="flex-1">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCmRQnxzvYuQknHTfbdTIciKae2hJekd7RVtfvcnsCKIGxsQ/viewform?embedded=true" class="w-full h-[1080px] border-0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
     <section id="footer">
         <footer class="bg-white py-8">
             <div class="container mx-auto text-center">
               <div class="flex justify-center space-x-8 mb-4">
-                <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">Blog</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">Jobs</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">Press</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">Accessibility</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">Partners</a>
+                <a href="#home" class="text-gray-600 hover:text-gray-900">Home</a>
+                <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact Us</a>
               </div>
               <div class="flex justify-center space-x-6 mb-4">
                 <a href="#" class="text-gray-600 hover:text-gray-900">
@@ -261,7 +309,7 @@
                 </a>
               </div>
               <div class="text-gray-600">
-                <p>&copy; 2025 Your Company. All rights reserved.</p>
+                <p>&copy; 2025 daleep-portfolio. All rights reserved.</p>
               </div>
             </div>
           </footer>          
