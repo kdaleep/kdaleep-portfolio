@@ -1,39 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daleep Kumar - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Daleep Portfolio</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Daleep Kumar</h1>
-        <p>Software Developer with expertise in Android, Flutter, Automation, and Laravel</p>
+    <header class="bg-white">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Daleep Kumar</span>
+                    <img class="h-12 w-auto" src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button id="open-menu" type="button"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="hidden lg:flex lg:gap-x-12">
+
+                <a href="#" class="text-lg font-semibold text-gray-900">Home</a>
+                <a href="#" class="text-lg font-semibold text-gray-900">Projects</a>
+                <a href="#" class="text-lg font-semibold text-gray-900">About Me</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <!-- <a href="#" class="text-lg font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a> -->
+
+                <div class="w-full max-w-sm min-w-[200px]">
+                    <div class="relative flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="absolute w-5 h-5 top-2.5 left-2.5 text-slate-600">
+                            <path fill-rule="evenodd"
+                                d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                        <input
+                            class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-10 pr-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                            placeholder="Website, android, flutter and more." />
+
+                        <button
+                            class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+                            type="button">
+                            Search
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 z-10 bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Daleep Kumar</span>
+                <img class="h-8 w-auto" src="./images/logo.png" alt="Logo">
+            </a>
+            <button id="close-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="py-6">
+                    <div class="w-full max-w-sm min-w-[200px]">
+                        <div class="relative flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="absolute w-5 h-5 top-2.5 left-2.5 text-slate-600">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <input class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-10 pr-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                                placeholder="Website, android, flutter and more." />
+                            <button class="ml-2 rounded-md bg-slate-800 py-2 px-4 text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none"
+                                type="button">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-2 py-6">
+                    <a href="#" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+                    <a href="#" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Projects</a>
+                    <a href="#" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">About Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
     </header>
-    
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I am Daleep Kumar, a passionate software developer specializing in Android, Flutter, Automation, and Laravel. With a keen eye for detail and a strong foundation in these technologies, I aim to create efficient and innovative solutions.</p>
+    <section id="projects">
+        <section class="py-12 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">My Projects</h2>
+                <p class="text-gray-600 mt-2">Code today, impact tomorrow.</p>
+            </div>
+            <div class="max-w-6xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://picsum.photos/400/200?random=${Math.random()}" alt="Blog Image">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Mar 16, 2020 <span class="ml-2 px-2 py-1 text-xs font-semibold bg-gray-200 rounded">Marketing</span></p>
+                        <h3 class="mt-3 text-lg font-semibold text-gray-900">Boost your conversion rate</h3>
+                        <p class="mt-2 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi...</p>
+                        <div class="mt-4 flex items-center">
+                            <img class="h-10 w-10 rounded-full" src="https://picsum.photos/400/200?random=${Math.random()}" alt="Michael Foster">
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">Michael Foster</p>
+                                <p class="text-sm text-gray-500">Co-Founder / CTO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://picsum.photos/400/200?random=${Math.random()}" alt="Blog Image">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Mar 10, 2020 <span class="ml-2 px-2 py-1 text-xs font-semibold bg-gray-200 rounded">Sales</span></p>
+                        <h3 class="mt-3 text-lg font-semibold text-gray-900">How to use search engine optimization to drive sales</h3>
+                        <p class="mt-2 text-gray-600">Optio cum necessitatibus dolor voluptatem provident...</p>
+                        <div class="mt-4 flex items-center">
+                            <img class="h-10 w-10 rounded-full" src="https://picsum.photos/400/200?random=${Math.random()}" alt="Lindsay Walton">
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">Lindsay Walton</p>
+                                <p class="text-sm text-gray-500">Front-end Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://picsum.photos/200/200?random=${Math.random()}" alt="Blog Image">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Feb 12, 2020 <span class="ml-2 px-2 py-1 text-xs font-semibold bg-gray-200 rounded">Business</span></p>
+                        <h3 class="mt-3 text-lg font-semibold text-gray-900">Improve your customer experience</h3>
+                        <p class="mt-2 text-gray-600">Cupiditate maiores ullam eveniet adipisci in doloribus...</p>
+                        <div class="mt-4 flex items-center">
+                            <img class="h-10 w-10 rounded-full" src="https://picsum.photos/200/200?random=${Math.random()}" alt="Tom Cook">
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">Tom Cook</p>
+                                <p class="text-sm text-gray-500">Director of Product</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </section>
-    
-    <section>
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Brief description of the project.</p>
+
+    <section id="hero">
+        <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+                alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center">
+            <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+                aria-hidden="true">
+                <div class="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+                aria-hidden="true">
+                <div class="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:mx-0">
+                    <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Work with me.</h2>
+                    <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">I specialize in Android apps, websites, and automation solutions that are fast, scalable, and user-friendly. Whether you need a custom web app, a high-performance mobile app, or backend automation, I’ve got you covered!</p>
+                </div>
+                <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                    <div
+                        class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                        <!-- <a href="#">Open roles <span aria-hidden="true">&rarr;</span></a>
+                        <a href="#">Internship program <span aria-hidden="true">&rarr;</span></a>
+                        <a href="#">Our values <span aria-hidden="true">&rarr;</span></a>
+                        <a href="#">Meet our leadership <span aria-hidden="true">&rarr;</span></a> -->
+                    </div>
+                    <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                        <div class="flex flex-col-reverse gap-1">
+                            <dt class="text-base/7 text-gray-300">Projects Completed</dt>
+                            <dd class="text-4xl font-semibold tracking-tight text-white">50+</dd>
+                        </div>
+                        <div class="flex flex-col-reverse gap-1">
+                            <dt class="text-base/7 text-gray-300">Years of Experience</dt>
+                            <dd class="text-4xl font-semibold tracking-tight text-white">3+</dd>
+                        </div>
+                        <div class="flex flex-col-reverse gap-1">
+                            <dt class="text-base/7 text-gray-300">Tech Stack</dt>
+                            <dd class="text-4xl font-semibold tracking-tight text-white">10+</dd>
+                        </div>
+                        <div class="flex flex-col-reverse gap-1">
+                            <dt class="text-base/7 text-gray-300">Happy Clients</dt>
+                            <dd class="text-4xl font-semibold tracking-tight text-white">20+</dd>
+                        </div>
+                    </dl>
+                    
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Brief description of the project.</p>
-        </div>
-        <!-- Add more projects as needed -->
     </section>
-    
-    <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/daleep-kumar">LinkedIn</a></p>
-    </footer>
-    
-    <script src="js/scripts.js"></script>
 </body>
+<script src="./js/script.js"></script>
 </html>
