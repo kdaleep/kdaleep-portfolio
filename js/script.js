@@ -1,4 +1,4 @@
-        document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
             const menu = document.getElementById("mobile-menu");
             const openButton = document.getElementById("open-menu");
             const closeButton = document.getElementById("close-menu");
@@ -11,4 +11,3 @@
                 menu.classList.add("hidden"); // Hide the menu
             });
         });
-        
