@@ -5,22 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daleep Portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing my projects and skills">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body class="font-sans">
     <header class="bg-white z-50 relative" id="home">
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="#home" class="-m-1.5 p-1.5">
                     <span class="sr-only">Daleep Kumar</span>
-                    <img class="h-12 w-auto" src="./images/logo.png" alt="">
+                    <img class="h-12 w-auto" src="./images/logo.png" alt="Daleep Kumar Logo" loading="lazy">
                 </a>
             </div>
             <div class="flex lg:hidden">
                 <button id="open-menu" type="button"
-                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                    aria-label="Open menu">
                     <span class="sr-only">Open main menu</span>
                     <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                         aria-hidden="true" data-slot="icon">
@@ -29,16 +34,13 @@
                     </svg>
                 </button>
             </div>
-            
-            <div class="hidden lg:flex lg:gap-x-12">
 
-                <a href="#home" class="text-lg font-semibold text-gray-900">Home</a>
-                <a href="#projects" class="text-lg font-semibold text-gray-900">Projects</a>
-                <a href="#contact" class="text-lg font-semibold text-gray-900">Contact Us</a>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="#home" class="text-lg font-semibold text-gray-900 hover:text-indigo-600 transition-colors">Home</a>
+                <a href="#projects" class="text-lg font-semibold text-gray-900 hover:text-indigo-600 transition-colors">Projects</a>
+                <a href="#contact" class="text-lg font-semibold text-gray-900 hover:text-indigo-600 transition-colors">Contact</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <!-- <a href="#" class="text-lg font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a> -->
-
                 <div class="w-full max-w-sm min-w-[200px]">
                     <div class="relative flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -47,174 +49,123 @@
                                 d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
                                 clip-rule="evenodd" />
                         </svg>
-
                         <input
                             class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-10 pr-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
                             placeholder="Website, android, flutter and more." />
-
-                        <button
-                            class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
-                            type="button">
-                            Search
-                        </button>
                     </div>
                 </div>
-
             </div>
-
         </nav>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="lg:hidden hidden fixed inset-0 z-10 bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
-            <a href="#home" class="-m-1.5 p-1.5">
-                <span class="sr-only">Daleep Kumar</span>
-                <img class="h-8 w-auto" src="./images/logo.png" alt="Logo">
-            </a>
-            <button id="close-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                <span class="sr-only">Close menu</span>
-                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="lg:hidden hidden fixed inset-0 z-10 bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+                <a href="#home" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Daleep Kumar</span>
+                    <img class="h-8 w-auto" src="./images/logo.png" alt="Logo" loading="lazy">
+                </a>
+                <button id="close-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700" aria-label="Close menu">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
 
-        <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="py-6">
-                    <div class="w-full max-w-sm min-w-[200px]">
-                        <div class="relative flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="absolute w-5 h-5 top-2.5 left-2.5 text-slate-600">
-                                <path fill-rule="evenodd"
-                                    d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <input class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-10 pr-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
-                                placeholder="Website, android, flutter and more." />
-                            <button class="ml-2 rounded-md bg-slate-800 py-2 px-4 text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none"
-                                type="button">
-                                Search
-                            </button>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="py-6">
+                        <div class="w-full max-w-sm min-w-[200px]">
+                            <div class="relative flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="absolute w-5 h-5 top-2.5 left-2.5 text-slate-600">
+                                    <path fill-rule="evenodd"
+                                        d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <input
+                                    class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-10 pr-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                                    placeholder="Website, android, flutter and more." />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="space-y-2 py-6">
-                    <a href="#home" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Home</a>
-                    <a href="#projects" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Projects</a>
-                    <a href="#contact" class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Contact Us</a>
+                    <div class="space-y-2 py-6">
+                        <a href="#home"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 transition-colors">Home</a>
+                        <a href="#projects"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 transition-colors">Projects</a>
+                        <a href="#contact"
+                            class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 transition-colors">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </header>
+
     <section id="introduction">
         <div class="bg-white">
             <div class="relative isolate px-6 pt-2 lg:px-8">
                 <div class="mx-auto max-w-2xl py-12">
                     <div class="text-center">
-                        <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Welcome to My Portfolio</h1>
-                        <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Explore my projects, skills, and journey in the tech world.</p>
+                        <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Welcome
+                            to My Portfolio</h1>
+                        <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Explore my projects,
+                            skills, and journey in the tech world.</p>
                         <div class="mt-10 flex items-center justify-center gap-x-6">
-                            <a href="#projects" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs bg-slate-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">See My Work</a>
-                            <a href="#about" class="text-sm font-semibold text-gray-900">Learn More About Me <span aria-hidden="true">→</span></a>
+                            <a href="#projects"
+                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs bg-slate-700 hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors">See
+                                My Work</a>
+                            <a href="#about" class="text-sm font-semibold text-gray-900 hover:text-indigo-600 transition-colors">Learn More About Me <span
+                                    aria-hidden="true">→</span></a>
                         </div>
                     </div>
                 </div>
-                <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-                    <div class="relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                    aria-hidden="true">
+                    <div class="relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    
-    <section id="projects">
-        <section class="py-12 bg-gray-100">
-            <div class="max-w-6xl mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-gray-900">My Projects</h2>
-                <p class="text-gray-600 mt-2">Code today, impact tomorrow.</p>
-            </div>
-            <div class="max-w-6xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="https://picsum.photos/400/200?random=${Math.random()}" alt="Blog Image">
-                    <div class="p-6">
-                        <p class="text-sm text-gray-500">Mar 16, 2020 <span class="ml-2 px-2 py-1 text-xs font-semibold bg-gray-200 rounded">Marketing</span></p>
-                        <h3 class="mt-3 text-lg font-semibold text-gray-900">Boost your conversion rate</h3>
-                        <p class="mt-2 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi...</p>
-                        <div class="mt-4 flex items-center">
-                            <img class="h-10 w-10 rounded-full" src="https://picsum.photos/400/200?random=${Math.random()}" alt="Michael Foster">
-                            <div class="ml-3">
-                                <p class="text-sm font-medium text-gray-900">Michael Foster</p>
-                                <p class="text-sm text-gray-500">Co-Founder / CTO</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="https://picsum.photos/400/200?random=${Math.random()}" alt="Blog Image">
-                    <div class="p-6">
-                        <p class="text-sm text-gray-500">Mar 10, 2020 <span class="ml-2 px-2 py-1 text-xs font-semibold bg-gray-200 rounded">Sales</span></p>
-                        <h3 class="mt-3 text-lg font-semibold text-gray-900">How to use search engine optimization to drive sales</h3>
-                        <p class="mt-2 text-gray-600">Optio cum necessitatibus dolor voluptatem provident...</p>
-                        <div class="mt-4 flex items-center">
-                            <img class="h-10 w-10 rounded-full" src="https://picsum.photos/400/200?random=${Math.random()}" alt="Lindsay Walton">
-                            <div class="ml-3">
-                                <p class="text-sm font-medium text-gray-900">Lindsay Walton</p>
-                                <p class="text-sm text-gray-500">Front-end Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img class="w-full h-48 object-cover" src="https://picsum.photos/200/200?random=${Math.random()}" alt="Blog Image">
-                    <div class="p-6">
-                        <p class="text-sm text-gray-500">Feb 12, 2020 <span class="ml-2 px-2 py-1 text-xs font-semibold bg-gray-200 rounded">Business</span></p>
-                        <h3 class="mt-3 text-lg font-semibold text-gray-900">Improve your customer experience</h3>
-                        <p class="mt-2 text-gray-600">Cupiditate maiores ullam eveniet adipisci in doloribus...</p>
-                        <div class="mt-4 flex items-center">
-                            <img class="h-10 w-10 rounded-full" src="https://picsum.photos/200/200?random=${Math.random()}" alt="Tom Cook">
-                            <div class="ml-3">
-                                <p class="text-sm font-medium text-gray-900">Tom Cook</p>
-                                <p class="text-sm text-gray-500">Director of Product</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
+
+    <section id="projects" class="py-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-900">My Projects</h2>
+            <p class="text-gray-600 mt-2">Code today, impact tomorrow.</p>
+        </div>
+        <div id="projects-container" class="max-w-6xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+            <!-- Projects will be loaded here dynamically -->
+        </div>
     </section>
 
     <section id="about">
         <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
             <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-                alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center">
+                alt="Background image" class="absolute inset-0 -z-10 w-full h-full object-cover object-right md:object-center" loading="lazy">
             <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
                 aria-hidden="true">
-                <div class="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+                <div class="aspect-1097/845 w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
                     style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
                 </div>
             </div>
             <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
                 aria-hidden="true">
-                <div class="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+                <div class="aspect-1097/845 w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
                     style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
                 </div>
             </div>
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl lg:mx-0">
                     <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Work with me.</h2>
-                    <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">I specialize in Android apps, websites, and automation solutions that are fast, scalable, and user-friendly. Whether you need a custom web app, a high-performance mobile app, or backend automation, I’ve got you covered!</p>
+                    <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">I specialize in Android
+                        apps, websites, and automation solutions that are fast, scalable, and user-friendly. Whether you
+                        need a custom web app, a high-performance mobile app, or backend automation, I've got you
+                        covered!</p>
                 </div>
                 <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                    <div
-                        class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                        <!-- <a href="#">Open roles <span aria-hidden="true">&rarr;</span></a>
-                        <a href="#">Internship program <span aria-hidden="true">&rarr;</span></a>
-                        <a href="#">Our values <span aria-hidden="true">&rarr;</span></a>
-                        <a href="#">Meet our leadership <span aria-hidden="true">&rarr;</span></a> -->
-                    </div>
                     <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
                         <div class="flex flex-col-reverse gap-1">
                             <dt class="text-base/7 text-gray-300">Projects Completed</dt>
@@ -233,7 +184,6 @@
                             <dd class="text-4xl font-semibold tracking-tight text-white">20+</dd>
                         </div>
                     </dl>
-                    
                 </div>
             </div>
         </div>
@@ -242,80 +192,78 @@
     <section id="contact" class="py-12 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row gap-8">
-                <!-- Left Column: Motivational Message (Wrapped in a Card) -->
                 <div class="flex-1 flex items-center m-8">
                     <div class="bg-white p-8 rounded-lg shadow-lg w-full text-center md:text-left">
-                        <!-- Icon or Decorative Graphic -->
                         <div class="mb-6">
-                            <svg class="w-16 h-16 mx-auto md:mx-0 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                            <svg class="w-16 h-16 mx-auto md:mx-0 text-slate-700" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z">
+                                </path>
                             </svg>
                         </div>
-                        <!-- Heading -->
                         <h2 class="text-3xl font-bold text-gray-800 mb-4">We'd Love to Hear From You!</h2>
-                        <!-- Subheading -->
                         <p class="text-lg text-gray-600 mb-6">
-                            Whether you have a question, feedback, or just want to say hello, feel free to reach out. Your thoughts are important to us, and we're here to assist you.
+                            Whether you have a question, feedback, or just want to say hello, feel free to reach out.
+                            Your thoughts are important to us, and we're here to assist you.
                         </p>
                     </div>
                 </div>
-                <!-- Right Column: Contact Form -->
                 <div class="flex-1">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCmRQnxzvYuQknHTfbdTIciKae2hJekd7RVtfvcnsCKIGxsQ/viewform?embedded=true" class="w-full h-[1080px] border-0" allowfullscreen></iframe>
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSfCmRQnxzvYuQknHTfbdTIciKae2hJekd7RVtfvcnsCKIGxsQ/viewform?embedded=true"
+                        class="w-full h-[1080px] border-0" allowfullscreen title="Contact Form"></iframe>
                 </div>
             </div>
         </div>
     </section>
-    
-    
-    <section id="footer">
-        <footer class="bg-white py-8">
-            <div class="container mx-auto text-center">
-              <div class="flex justify-center space-x-8 mb-4">
-                <a href="#home" class="text-gray-600 hover:text-gray-900">Home</a>
-                <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
-                <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact Us</a>
-              </div>
-              <div class="flex justify-center space-x-6 mb-4">
-                <a href="#" class="text-gray-600 hover:text-gray-900">
-                  <!-- Facebook icon -->
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.324V1.325C24 .593 23.407 0 22.675 0z"/>
-                  </svg>
-                </a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">
-                  <!-- Instagram icon -->
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.975.975 1.248 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.31 3.608-.975.975-2.242 1.248-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.31-.975-.975-1.248-2.242-1.31-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.334-2.633 1.31-3.608.975-.975 2.242-1.248 3.608-1.31 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.756 0 8.332.012 7.052.07 5.773.128 4.548.334 3.5 1.382 2.452 2.43 2.246 3.655 2.188 4.934.012 8.332 0 8.756 0 12s.012 3.668.07 4.948c.058 1.279.264 2.504 1.312 3.552 1.048 1.048 2.273 1.273 4.934 1.273 8.332 0 8.756 0 12 0 8.332 0 8.756 0 12 0z" />
-                  </svg>
-                </a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">
-                  <!-- Twitter icon -->
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22.46 6c-.77.35-1.6.58-2.47.68a4.29 4.29 0 0 0 1.88-2.38 8.57 8.57 0 0 1-2.72 1.04A4.27 4.27 0 0 0 16 4c-2.36 0-4.27 1.91-4.27 4.27 0 .34.04.67.11.98C8 9 5.46 7.8 3.81 5.95c-.37.64-.58 1.38-.58 2.17 0 1.5.76 2.83 1.93 3.61-.7-.02-1.36-.21-1.93-.53v.05c0 2.08 1.48 3.82 3.44 4.21-.36.1-.74.15-1.12.15-.28 0-.54-.03-.81-.07a4.27 4.27 0 0 0 3.99 2.95A8.6 8.6 0 0 1 2 18.59a12.14 12.14 0 0 0 6.57 1.92"/>
-                  </svg>
-                </a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">
-                  <!-- GitHub icon -->
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0a12 12 0 0 0-3.78 23.4c.6.11.82-.25.82-.57v-2.01c-3.34.72-4.04-1.57-4.04-1.57-.55-1.41-1.33-1.79-1.33-1.79-1.08-.74.08-.72.08-.72 1.19.08 1.81 1.23 1.81 1.23 1.07 1.82 2.8 1.29 3.49 1 .1-.78.42-1.3.77-1.59-2.67-.31-5.47-1.33-5.47-5.91 0-1.31.47-2.38 1.25-3.21-.13-.32-.54-1.57.12-3.28 0 0 1.01-.32 3.31 1.22a11.53 11.53 0 0 1 6.02 0c2.3-1.54 3.31-1.22 3.31-1.22.66 1.71.25 2.96.13 3.28.78.83 1.25 1.9 1.25 3.21 0 4.59-2.81 5.6-5.48 5.9.43.37.82 1.1.82 2.22V22.8c0 .32.22.69.82.57A12 12 0 0 0 12 0z" />
-                  </svg>
-                </a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">
-                  <!-- YouTube icon -->
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.499 6.74c-.29-1.08-1.14-1.93-2.19-2.22C19.591 4 12 4 12 4s-7.591 0-9.31.52c-1.05.29-1.9 1.14-2.19 2.22C0 8.466 0 12 0 12s0 3.534.5 5.26c.29 1.08 1.14 1.93 2.19 2.22C4.409 20 12 20 12 20s7.591 0 9.31-.52c1.05-.29 1.9-1.14 2.19-2.22C24 15.534 24 12 24 12s0-3.534-.5-5.26z"/>
-                  </svg>
-                </a>
-              </div>
-              <div class="text-gray-600">
-                <p>&copy; 2025 daleep-portfolio. All rights reserved.</p>
-              </div>
+
+    <footer class="bg-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-8 mb-4">
+                <a href="#home" class="text-gray-600 hover:text-indigo-600 transition-colors">Home</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">Contact</a>
             </div>
-          </footer>          
-    </section>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors" aria-label="Facebook">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.324V1.325C24 .593 23.407 0 22.675 0z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors" aria-label="Instagram">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.975.975 1.248 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.31 3.608-.975.975-2.242 1.248-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.31-.975-.975-1.248-2.242-1.31-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.334-2.633 1.31-3.608.975-.975 2.242-1.248 3.608-1.31 1.266-.058 1.646-.07 4.85-.07zm0-2.163C8.756 0 8.332.012 7.052.07 5.773.128 4.548.334 3.5 1.382 2.452 2.43 2.246 3.655 2.188 4.934.012 8.332 0 8.756 0 12s.012 3.668.07 4.948c.058 1.279.264 2.504 1.312 3.552 1.048 1.048 2.273 1.273 4.934 1.273 8.332 0 8.756 0 12 0 8.332 0 8.756 0 12 0z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors" aria-label="Twitter">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22.46 6c-.77.35-1.6.58-2.47.68a4.29 4.29 0 0 0 1.88-2.38 8.57 8.57 0 0 1-2.72 1.04A4.27 4.27 0 0 0 16 4c-2.36 0-4.27 1.91-4.27 4.27 0 .34.04.67.11.98C8 9 5.46 7.8 3.81 5.95c-.37.64-.58 1.38-.58 2.17 0 1.5.76 2.83 1.93 3.61-.7-.02-1.36-.21-1.93-.53v.05c0 2.08 1.48 3.82 3.44 4.21-.36.1-.74.15-1.12.15-.28 0-.54-.03-.81-.07a4.27 4.27 0 0 0 3.99 2.95A8.6 8.6 0 0 1 2 18.59a12.14 12.14 0 0 0 6.57 1.92" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors" aria-label="GitHub">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0a12 12 0 0 0-3.78 23.4c.6.11.82-.25.82-.57v-2.01c-3.34.72-4.04-1.57-4.04-1.57-.55-1.41-1.33-1.79-1.33-1.79-1.08-.74.08-.72.08-.72 1.19.08 1.81 1.23 1.81 1.23 1.07 1.82 2.8 1.29 3.49 1 .1-.78.42-1.3.77-1.59-2.67-.31-5.47-1.33-5.47-5.91 0-1.31.47-2.38 1.25-3.21-.13-.32-.54-1.57.12-3.28 0 0 1.01-.32 3.31 1.22a11.53 11.53 0 0 1 6.02 0c2.3-1.54 3.31-1.22 3.31-1.22.66 1.71.25 2.96.13 3.28.78.83 1.25 1.9 1.25 3.21 0 4.59-2.81 5.6-5.48 5.9.43.37.82 1.1.82 2.22V22.8c0 .32.22.69.82.57A12 12 0 0 0 12 0z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors" aria-label="YouTube">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M23.499 6.74c-.29-1.08-1.14-1.93-2.19-2.22C19.591 4 12 4 12 4s-7.591 0-9.31.52c-1.05.29-1.9 1.14-2.19 2.22C0 8.466 0 12 0 12s0 3.534.5 5.26c.29 1.08 1.14 1.93 2.19 2.22C4.409 20 12 20 12 20s7.591 0 9.31-.52c1.05-.29 1.9-1.14 2.19-2.22C24 15.534 24 12 24 12s0-3.534-.5-5.26z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="text-gray-600">
+                <p>&copy; <span id="current-year"></span> daleep-portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
-<script src="./js/script.js">
-    
-</script>
+
 </html>

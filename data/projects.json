@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Simple Calculator Using PHP, HTML & CSS",
+        "description": "This beginner-friendly project demonstrates how to perform basic arithmetic operations—addition, subtraction, multiplication, and division—using server-side PHP logic and a clean front-end interface.",
+        "date": "June 2025",
+        "tags": ["Web Development", "PHP", "Html", "CSS"],
+        "youtubeEmbed": "OAKpA5v30f4",
+        "links": [
+            {
+                "type": "demo",
+                "url": "https://youtu.be/OAKpA5v30f4"
+            },
+            {
+                "type": "code",
+                "url": "https://github.com/username/ecommerce-project"
+            }
+        ]
+    },
+    {
+        "title": "Typing Speed Test Website Demo | Java Servlets, HTML, CSS & JS",
+        "description": "Take a quick look at a responsive typing‑speed website powered by Java Servlets on the backend and vanilla HTML, CSS & JavaScript on the front.",
+        "date": "april 2022",
+        "tags": ["Java", "JavaServlets", "Mysql"],
+        "youtubeEmbed": "IuBYviSfAcg",
+        "links": [
+            {
+                "type": "demo",
+                "url": "https://youtu.be/IuBYviSfAcg"
+            },
+            {
+                "type": "code",
+                "url": "https://github.com/kdaleep/brisklytype.github.io.git"
+            }
+        ]
+    }
+]
+
+
+
