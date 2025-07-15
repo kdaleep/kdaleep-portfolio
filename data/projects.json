@@ -2,13 +2,30 @@
     {
         "title": "Simple Calculator Using PHP, HTML & CSS",
         "description": "This beginner-friendly project demonstrates how to perform basic arithmetic operations—addition, subtraction, multiplication, and division—using server-side PHP logic and a clean front-end interface.",
-        "date": "June 2025",
+        "date": "14 June 2025",
         "tags": ["Web Development", "PHP", "Html", "CSS"],
         "youtubeEmbed": "OAKpA5v30f4",
         "links": [
             {
                 "type": "demo",
                 "url": "https://youtu.be/OAKpA5v30f4"
+            },
+            {
+                "type": "code",
+                "url": "https://github.com/username/ecommerce-project"
+            }
+        ]
+    },
+    {
+        "title": "Q&A Website Demo | Ask & Answer Platform Using PHP, Bootstrap, HTML & CSS",
+        "description": "This is a demo of a Question & Answer (Q&A) platform built using PHP, Bootstrap, HTML, and CSS. Users can ask questions, post answers, browse by category, and search content easily.",
+        "date": "15 June 2025",
+        "tags": ["Web Development", "PHP", "Html", "CSS"],
+        "youtubeEmbed": "sVf2VmdV8Z8",
+        "links": [
+            {
+                "type": "demo",
+                "url": "https://youtu.be/sVf2VmdV8Z8"
             },
             {
                 "type": "code",
