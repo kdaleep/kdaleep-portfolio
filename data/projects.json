@@ -1,4 +1,37 @@
 [
+
+    {
+        "title": "GoWatch - Movie Streaming Website in Core PHP | MVC Project Demo",
+        "description": " Presenting my latest project: **GoWatch** — a movie streaming website built using **Core PHP with MVC Architecture**!
+         Project Features:
+✅ Clean MVC structure (Model-View-Controller)
+✅ Admin Panel for managing movies, categories, episodes, and users
+✅ CRUD operations for movies and episodes
+✅ Bootstrap + Font Awesome frontend
+✅ Thumbnail upload & preview
+✅ Dynamic episode listing
+✅ User-friendly interface
+🛠️ Tech Stack:
+- Core PHP (No framework)
+- MySQL
+- Bootstrap
+- HTML/CSS
+- Font Awesome
+",
+        "date": "14 June 2025",
+        "tags": ["php project", "PHP", "Html", "CSS", "Bootstrap"],
+        "youtubeEmbed": "1yeE-XiwNN4",
+        "links": [
+            {
+                "type": "demo",
+                "url": "https://youtu.be/1yeE-XiwNN4"
+            },
+            {
+                "type": "code",
+                "url": "https://github.com/kdaleep/GoWatch.git"
+            }
+        ]
+    },
     {
         "title": "Simple Calculator Using PHP, HTML & CSS",
         "description": "This beginner-friendly project demonstrates how to perform basic arithmetic operations—addition, subtraction, multiplication, and division—using server-side PHP logic and a clean front-end interface.",
