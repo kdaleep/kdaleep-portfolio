@@ -1,73 +1,70 @@
 [
   {
-  "title": "GoWatch - Movie Streaming Website in Core PHP | MVC Project Demo",
-  "description": "Presenting my latest project: GoWatch — a movie streaming website built using Core PHP with MVC Architecture!\n\nProject Features:\n✅ Clean MVC structure (Model-View-Controller)\n✅ Admin Panel for managing movies, categories, episodes, and users\n✅ CRUD operations for movies and episodes\n✅ Bootstrap + Font Awesome frontend\n✅ Thumbnail upload & preview\n✅ Dynamic episode listing\n✅ User-friendly interface\n\n🛠️ Tech Stack:\n- Core PHP (No framework)\n- MySQL\n- Bootstrap\n- HTML/CSS\n- Font Awesome",
-  "date": "14 June 2025",
-  "tags": ["php project", "PHP", "Html", "CSS", "Bootstrap", "movie streaming website", "mvc php project"],
-  "youtubeEmbed": "1yeE-XiwNN4",
-  "links": [
-    {
-      "type": "demo",
-      "url": "https://youtu.be/1yeE-XiwNN4"
-    },
-    {
-      "type": "code",
-      "url": "https://github.com/kdaleep/GoWatch.git"
-    }
-  ]
-},
-    {
-        "title": "Simple Calculator Using PHP, HTML & CSS",
-        "description": "This beginner-friendly project demonstrates how to perform basic arithmetic operations—addition, subtraction, multiplication, and division—using server-side PHP logic and a clean front-end interface.",
-        "date": "14 June 2025",
-        "tags": ["Web Development", "PHP", "Html", "CSS"],
-        "youtubeEmbed": "OAKpA5v30f4",
-        "links": [
-            {
-                "type": "demo",
-                "url": "https://youtu.be/OAKpA5v30f4"
-            },
-            {
-                "type": "code",
-                "url": "https://github.com/kdaleep/kdaleep-php-calculator.git"
-            }
-        ]
-    },
-    {
-        "title": "Q&A Website Demo | Ask & Answer Platform Using PHP, Bootstrap, HTML & CSS",
-        "description": "This is a demo of a Question & Answer (Q&A) platform built using PHP, Bootstrap, HTML, and CSS. Users can ask questions, post answers, browse by category, and search content easily.",
-        "date": "15 June 2025",
-        "tags": ["Web Development", "PHP", "Html", "CSS"],
-        "youtubeEmbed": "sVf2VmdV8Z8",
-        "links": [
-            {
-                "type": "demo",
-                "url": "https://youtu.be/sVf2VmdV8Z8"
-            },
-            {
-                "type": "code",
-                "url": "https://github.com/kdaleep/QA"
-            }
-        ]
-    },
-    {
-        "title": "Typing Speed Test Website Demo | Java Servlets, HTML, CSS & JS",
-        "description": "Take a quick look at a responsive typing‑speed website powered by Java Servlets on the backend and vanilla HTML, CSS & JavaScript on the front.",
-        "date": "april 2022",
-        "tags": ["Java", "JavaServlets", "Mysql"],
-        "youtubeEmbed": "IuBYviSfAcg",
-        "links": [
-            {
-                "type": "demo",
-                "url": "https://youtu.be/IuBYviSfAcg"
-            },
-            {
-                "type": "code",
-                "url": "https://github.com/kdaleep/brisklytype.github.io.git"
-            }
-        ]
-    }
+    "title": "GoWatch - Movie Streaming Website in Core PHP | MVC Project Demo",
+    "description": "Presenting my latest project: GoWatch — a movie streaming website built using Core PHP with MVC Architecture!\n\nProject Features:\n✅ Clean MVC structure (Model-View-Controller)\n✅ Admin Panel for managing movies, categories, episodes, and users\n✅ CRUD operations for movies and episodes\n✅ Bootstrap + Font Awesome frontend\n✅ Thumbnail upload & preview\n✅ Dynamic episode listing\n✅ User-friendly interface\n\n🛠️ Tech Stack:\n- Core PHP (No framework)\n- MySQL\n- Bootstrap\n- HTML/CSS\n- Font Awesome",
+    "date": "2025-06-14",
+    "tags": ["php project", "PHP", "Html", "CSS", "Bootstrap", "movie streaming website", "mvc php project"],
+    "youtubeEmbed": "1yeE-XiwNN4",
+    "links": [
+      {
+        "type": "demo",
+        "url": "https://youtu.be/1yeE-XiwNN4"
+      },
+      {
+        "type": "code",
+        "url": "https://github.com/kdaleep/GoWatch.git"
+      }
+    ]
+  },
+  {
+    "title": "Simple Calculator Using PHP, HTML & CSS",
+    "description": "This beginner-friendly project demonstrates how to perform basic arithmetic operations—addition, subtraction, multiplication, and division—using server-side PHP logic and a clean front-end interface.",
+    "date": "2025-06-14",
+    "tags": ["Web Development", "PHP", "Html", "CSS"],
+    "youtubeEmbed": "OAKpA5v30f4",
+    "links": [
+      {
+        "type": "demo",
+        "url": "https://youtu.be/OAKpA5v30f4"
+      },
+      {
+        "type": "code",
+        "url": "https://github.com/kdaleep/kdaleep-php-calculator.git"
+      }
+    ]
+  },
+  {
+    "title": "Q&A Website Demo | Ask & Answer Platform Using PHP, Bootstrap, HTML & CSS",
+    "description": "This is a demo of a Question & Answer (Q&A) platform built using PHP, Bootstrap, HTML, and CSS. Users can ask questions, post answers, browse by category, and search content easily.",
+    "date": "2025-06-15",
+    "tags": ["Web Development", "PHP", "Html", "CSS"],
+    "youtubeEmbed": "sVf2VmdV8Z8",
+    "links": [
+      {
+        "type": "demo",
+        "url": "https://youtu.be/sVf2VmdV8Z8"
+      },
+      {
+        "type": "code",
+        "url": "https://github.com/kdaleep/QA"
+      }
+    ]
+  },
+  {
+    "title": "Typing Speed Test Website Demo | Java Servlets, HTML, CSS & JS",
+    "description": "Take a quick look at a responsive typing‑speed website powered by Java Servlets on the backend and vanilla HTML, CSS & JavaScript on the front.",
+    "date": "2022-04-01",
+    "tags": ["Java", "JavaServlets", "Mysql"],
+    "youtubeEmbed": "IuBYviSfAcg",
+    "links": [
+      {
+        "type": "demo",
+        "url": "https://youtu.be/IuBYviSfAcg"
+      },
+      {
+        "type": "code",
+        "url": "https://github.com/kdaleep/brisklytype.github.io.git"
+      }
+    ]
+  }
 ]
-
-
-
